@@ -300,6 +300,7 @@ h1, h2, h3, h4, h5, h6, figure {
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+  background-position: center;
   width: 100%;
 }
 .fh5co-cover .overlay {
@@ -836,7 +837,16 @@ form label {
 .fh5co-cover .display-tc h2 {
   margin: 0;
   padding: 0;
-  color: white;
+  color: #000;
+}
+#fh5co-header .display-tc h1, #fh5co-header .display-tc h2,
+#fh5co-counter .display-tc h1,
+#fh5co-counter .display-tc h2,
+.fh5co-cover .display-tc h1,
+.fh5co-cover .display-tc h2 {
+  margin: 0;
+  padding: 0;
+  color: #000;
 }
 #fh5co-header .display-tc h1,
 #fh5co-counter .display-tc h1,
@@ -935,12 +945,17 @@ form label {
 .simply-countdown {
   /* The countdown */
   margin-bottom: 2em;
+  display: flex;
+  top: 500px;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: nowrap;
 }
 
 .simply-countdown > .simply-section {
   /* coutndown blocks */
   display: inline-block;
-  width: 100px;
+  width: 65px;
   height: 100px;
   margin: 0 4px;
   -webkit-border-radius: 50%;
@@ -964,7 +979,8 @@ form label {
 }
 .simply-countdown > .simply-section > div {
   /* countdown block inner div */
-  display: table-cell;
+  display: flex;
+  flex-direction: column;
   vertical-align: middle;
   height: 100px;
   width: 100px;
@@ -972,18 +988,18 @@ form label {
 
 .simply-countdown > .simply-section .simply-amount,
 .simply-countdown > .simply-section .simply-word {
-  display: block;
-  color: white;
+  display: inline;
+  color: #000;
   /* amounts and words */
 }
 
 .simply-countdown > .simply-section .simply-amount {
-  font-size: 30px;
+  font-size: 15px;
   /* amounts */
 }
 
 .simply-countdown > .simply-section .simply-word {
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(0, 0, 0, 0.7);
   text-transform: uppercase;
   font-size: 12px;
   /* words */
@@ -1840,3 +1856,76 @@ form label {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+/*my css*/
+header{
+  height: 100vh;
+  width: 100%;
+  background-image: url(../images/FAUZI.png);
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+header .container .row{
+
+}
+header .container .row h1{
+  font-size: 1.5em;
+  font-family: "Sacramento", Arial, serif;
+  text-align: center;
+  padding-top: 150px;
+
+}
+header .container .row h2{
+  font-size: 2em;
+  font-family: "Sacramento", Arial, serif;
+  text-align: center;
+  padding-top: 450px;
+
+
+}
+
+.fh5co-heading h2 {
+  margin-top: 40px;
+}
+
+header .container{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 768px){
+  header {
+    background-size: 35%;
+    padding-top: 4em;
+    background-position: right;
+  }
+  header .container{
+    align-content: flex-start;
+  }
+  header .container .row{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  header .container .row h2{
+    font-size: 2.5em;
+/*    width: max-content;*/
+    padding-top: 0;
+  }
+  header .container .row h1{
+    font-size: 2.5em;
+/*    width: max-content;*/
+/*    padding-top: -100px;*/
+  }
+
+}
