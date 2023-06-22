@@ -1857,7 +1857,7 @@ form label {
 
 /*# sourceMappingURL=style.css.map */
 
-/*my css*/
+/*my css ==============================================================================*/
 /*header{
   height: 100vh;
   width: 100%;
@@ -1869,23 +1869,7 @@ form label {
   justify-content: center;
   position: relative;
 }*/
-header .container .row img{
-  height: 100%;
-  width: 100%;
-}
-header .container .row h1{
-  font-size: 1.7em;
-  font-family: "Sacramento", Arial, serif;
-  text-align: center;
-  padding-top: 3rem;
-}
-header .container .row h2{
-  font-size: 2em;
-  font-family: "Sacramento", Arial, serif;
-  text-align: center;
 
-
-}
 
 
 header .container{
@@ -1895,6 +1879,7 @@ header .container{
   justify-content: center;
   flex-wrap: wrap;
   overflow: hidden;
+  height: 100vh;
 }
 
 .welcome {
@@ -1916,20 +1901,151 @@ header .container{
   animation-name: slideUp;
   }
 
-.welcome .container{
+
+/* konten */
+
+.simply-countdown{
+  margin-top: 10px;
+  margin-bottom: 0;
+  z-index: 2;
+}
+.simply-countdown > .simply-section{
+  width: 45px;
+  height: 15px;
+}
+
+.simply-countdown > .simply-section .simply-amount{
+  font-size: 13px;
+}
+.simply-countdown > .simply-section .simply-word{
+  font-size: 9px;
+}
+
+.welcome .container .konten,
+header .container .row .konten{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
+
+.welcome .container .konten h1,
+header .container .row .konten h1{
+  font-family: "Great Vibes", cursive;
+  font-size: 1.7em;
+  text-align: center;
+  margin-bottom: 5px;
+  color: #631014;
+  z-index: 2;
+}
+header .container .row{}
+
+.welcome .container .konten h2,
+header .container .row .konten h2{
+  font-style: bold;
+  font-size: 0.6em;
+}
+.welcome .container .konten button{
+  font-size: 0.8em;
+  margin-top: 5px;
+  background-color: #DF9999;
+  color: #fff;
+  z-index: 3;
+}
 .hidden{
   display: none;
 }
-.welcome img{
-  height: 100%;
+.welcome .container .konten .image,
+header .container .row .konten .image{
+  background-image: url('../images/fauzikkkk.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
   width: 100%;
+  height: 305px;
 }
 
+/*decor*/
+.welcome .container .decoratas::before,
+header .container .row .decoratas::before{
+  content: '';
+  background-image: url('../images/ataskiri.png');
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 267px;
+  height: 44px;
+  left: 0;
+  top: 0;
+}
+.welcome .container .decoratas::after,
+header .container .row .decoratas::after{
+  content: '';
+  background-image: url('../images/ataskanan.png');
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 232px;
+  height: 152px;
+  right: 0;
+  top: 0;
+}
+
+.welcome .container .love::before,
+header .container .row .love::before{
+  content: '';
+  background-image: url('../images/love1.png');
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 45px;
+  height: 75px;
+  top: 37px;
+  left: 20px;
+}
+.welcome .container .love::after,
+header .container .row .love::after{
+  content: '';
+  background-image: url('../images/love3.png');
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 45px;
+  height: 75px;
+  bottom: 100px;
+  right: 20px;
+}
+
+.welcome .container .decorbawah::before,
+header .container .row .decorbawah::before{
+  content: '';
+  background-image: url('../images/bawah.png');
+  background-position: bottom;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+}
+.welcome .container .decorbawah::after,
+header .container .row .decorbawah::after{
+  content: '';
+  background-image: url('../images/bawah2.png');
+  background-position: bottom;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+}
 
 /* Animasi slide up */
 @keyframes slideUp {
@@ -2005,3 +2121,6 @@ body.no-scroll{
   }
 
 }
+/*font #373435*/
+/*font #631014*/
+/*#DF9999*/
