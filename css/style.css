@@ -1858,7 +1858,7 @@ form label {
 /*# sourceMappingURL=style.css.map */
 
 /*my css*/
-header{
+/*header{
   height: 100vh;
   width: 100%;
   background-image: url(../images/FAUZI.png);
@@ -1868,22 +1868,21 @@ header{
   display: flex;
   justify-content: center;
   position: relative;
-}
-header .container .row{
-
+}*/
+header .container .row img{
+  height: 100%;
+  width: 100%;
 }
 header .container .row h1{
   font-size: 1.7em;
   font-family: "Sacramento", Arial, serif;
   text-align: center;
-  padding-top: 4em;
-
+  padding-top: 3rem;
 }
 header .container .row h2{
   font-size: 2em;
   font-family: "Sacramento", Arial, serif;
   text-align: center;
-  padding-top: 13em;
 
 
 }
@@ -1903,6 +1902,18 @@ header .container{
     background-size: 35%;
     padding-top: 4em;
     background-position: right;
+  }
+  header{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/FAUZI.png);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+  header .container .row img{
+    display: none;
   }
   header .container{
     align-content: flex-start;
