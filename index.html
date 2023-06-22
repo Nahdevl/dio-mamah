@@ -42,6 +42,7 @@
 	
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 	<!-- Icomoon Icon Fonts-->
 	<link rel="stylesheet" href="css/icomoon.css">
 	<!-- Bootstrap  -->
@@ -70,11 +71,17 @@
 		
 	<div class="fh5co-loader"></div>
 	
-	<header>
+	<div class="welcome animate_slower">
+		<div class="container">
+			<img src="images/FAUZI.png">
+			<button id="open" type="button" class="btn btn-secondary">Open Invitation</button>
+		</div>
+	</div>
+	<header class="hidden">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8">
-					<h1>We Are Getting Married</h1>
+					<h1 >We Are Getting Married</h1>
 					<img src="images/FAUZI.png">
 					<h2>Fauzi &amp; Nur</h2>
 				</div>
@@ -483,6 +490,12 @@
         month: d.getMonth() + 1,
         day: d.getDate(),
         enableUtc: false
+    });
+
+    $('#open').click(function() {
+    	$('.hidden').removeClass('hidden');
+    	// $('.welcome').addClass('hidden');
+    	$('.welcome').addClass('animate__fadeOutUp');;
     });
 </script>
 
