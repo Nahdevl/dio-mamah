@@ -1411,6 +1411,21 @@ form label {
   margin-bottom: 0;
 }
 
+
+#fh5co-counter .display-tc{
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+#fh5co-counter .display-tc h3{
+  font-size: 1em;
+  color: #fff;
+}
+
+#fh5co-counter .display-tc span{
+  color: #fff;
+}
+
 @media screen and (max-width: 768px) {
   #fh5co-footer .copyright .pull-left,
   #fh5co-footer .copyright .pull-right {
@@ -2090,7 +2105,7 @@ body.no-scroll{
   header .container .row{
     height: 100vh;
     width: 100%;
-    background-image: url(../images/FAUZI.png);
+    background-image: url(../images/fauzikkkk.png);
     background-repeat: no-repeat;
     display: flex;
     background-size: 30%;
