@@ -69,6 +69,9 @@
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
+	
+	<script src="https://cdn.jsdelivr.net/gh/davidshimjs/qrcodejs@gh-pages/qrcode.min.js"></script>
+
 
 	</head>
 	<body>
@@ -87,7 +90,8 @@
 			<div class="love"></div>
 			<div class="konten">
 				<h1>Wedding Invitation</h1>
-				<h2>Fauzi Anhari & Nur Mardiyana Fitria Sari</h2>
+				<p style="z-index: 9; margin-bottom: 0; font-size: 0.5em;"> kepada Yth saudara / saudari</p>
+				<h2 style="font-size: 0.8em; text-transform: capitalize;" id="to"></h2>
 				<div class="image"></div>
 				<button id="open" type="button" class="btn btn-secondary">Open Invitation</button>
 				<div class="simply-countdown simply-countdown-one"></div>
@@ -401,6 +405,8 @@
 
 			<div class="row copyright">
 				<div class="col-md-12 text-center">
+					<p>Scan Qr Code di tempat acara untuk mengisi daftar hadir</p>
+					<div id="qrcode" style="display: flex; justify-content: center; margin-bottom: 2em;"></div>
 					<p>
 						<small class="block">&copy; 2023 Wedding Invitation</small> 
 						<small class="block">Develop by <a href="https://nahrul.github.io" target="_blank">Nahdevl</a>
@@ -448,6 +454,7 @@
 	<!-- Main -->
 	<script src="js/main.js"></script>
 
+
 	<script>
   	var audio = document.getElementById("music");
   	function pauseAudio() {
@@ -483,6 +490,29 @@
     	$('.welcome').addClass('animate__fadeOutUp');
 
     });
+
+	// qrcode
+	const people = document.getElementById("to");
+	var div = document.getElementById("qrcode");
+	var urlParams = new URLSearchParams(window.location.search);
+	var to = urlParams.get("to");
+	people.innerText = to.replace(/-/g, " ");
+
+	console.log(to); // Output: value1
+
+	new QRCode(div, `https://script.google.com/macros/s/AKfycbyi1g3jMxV2a3UQEm7nqS4oxFccmH5Tn5CqOS4hGUR9sNdpihPUz6m1OKjgnYnitbZw/exec?table=ozan&data={"name":"${to.replace(/-/g, " ")}"}`);
+	// var qrcode = new QRCode("test", {
+    // 	text: "https://nahrul.github.io",
+    // 	width: 128,
+    // 	height: 128,
+    // 	colorDark : "#000000",
+    // 	colorLight : "#ffffff",
+	// });
+
+	// qrcode.clear(); // clear the code.
+	// qrcode.makeCode("http://naver.com"); // make another code.
+	// qrcode
+
 </script>
 
 	</body>
