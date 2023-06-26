@@ -1930,10 +1930,12 @@ header .container{
 }
 
 .simply-countdown > .simply-section .simply-amount{
-  font-size: 13px;
+  font-size: 1em;
+  color: #fff;
 }
 .simply-countdown > .simply-section .simply-word{
   font-size: 9px;
+  color: #fff;
 }
 
 .welcome .container .konten,
@@ -1947,10 +1949,10 @@ header .container .row .konten{
 .welcome .container .konten h1,
 header .container .row .konten h1{
   font-family: "Great Vibes", cursive;
-  font-size: 1.7em;
+  font-size: 2em;
   text-align: center;
   margin-bottom: 5px;
-  color: #631014;
+  color: #ffe6d7;
   z-index: 2;
 }
 header .container .row{}
@@ -1958,7 +1960,8 @@ header .container .row{}
 .welcome .container .konten h2,
 header .container .row .konten h2{
   font-style: bold;
-  font-size: 0.6em;
+  font-size: 1em;
+  color: #fff;
 }
 .welcome .container .konten button{
   font-size: 0.8em;
@@ -1970,43 +1973,18 @@ header .container .row .konten h2{
 .hidden{
   display: none;
 }
-.welcome .container .konten .image,
-header .container .row .konten .image{
-  background-image: url('../images/fauzikkkk.png');
+.welcome,
+header{
+  background-image: url('../images/gallery-3.jpg');
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
-  height: 305px;
+  height: 100vh;
 }
 
 /*decor*/
-.welcome .container .decoratas::before,
-header .container .row .decoratas::before{
-  content: '';
-  background-image: url('../images/ataskiri.png');
-  background-position: center;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  position: absolute;
-  width: 267px;
-  height: 44px;
-  left: 0;
-  top: 0;
-}
-.welcome .container .decoratas::after,
-header .container .row .decoratas::after{
-  content: '';
-  background-image: url('../images/ataskanan.png');
-  background-position: center;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  position: absolute;
-  width: 232px;
-  height: 152px;
-  right: 0;
-  top: 0;
-}
+
 
 .welcome .container .love::before,
 header .container .row .love::before{
@@ -2033,33 +2011,6 @@ header .container .row .love::after{
   height: 75px;
   bottom: 100px;
   right: 20px;
-}
-
-.welcome .container .decorbawah::before,
-header .container .row .decorbawah::before{
-  content: '';
-  background-image: url('../images/bawah.png');
-  background-position: bottom;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  bottom: 0;
-  left: 0;
-}
-.welcome .container .decorbawah::after,
-header .container .row .decorbawah::after{
-  content: '';
-  background-image: url('../images/bawah2.png');
-  background-position: bottom;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  bottom: 0;
-  left: 0;
 }
 
 /* Animasi slide up */
