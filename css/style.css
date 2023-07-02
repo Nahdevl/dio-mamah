@@ -1996,7 +1996,7 @@ header .container .row .love::before{
   position: absolute;
   width: 45px;
   height: 75px;
-  top: 37px;
+  top: 50px;
   left: 20px;
 }
 .welcome .container .love::after,
