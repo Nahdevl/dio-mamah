@@ -66,7 +66,7 @@
 			<meta content="https://nahdevl.github.io/Fauzi-Nur/images/fauzikkkk.png" itemprop="url"/>
 		</div>
 		<!-- audio -->
-	<audio id="music" src="images/music.mp3" loop></audio>
+	<audio id="music" src="images/instrumental.mp3" loop></audio>
 		
 	<div class="fh5co-loader"></div>
 	
@@ -370,9 +370,10 @@
 
 			<div class="row copyright">
 				<div class="col-md-12 text-center">
-					<p>Scan Qr Code di tempat acara untuk mengisi daftar hadir</p>
-					<div id="qrcode" style="display: flex; justify-content: center; margin-bottom: 2em;"></div>
-					<p>
+					<h3>Amplop Digital</h3>
+					<img style="width:125px; height: 65px;" src="./images/dana.png">
+					<div id="qrcode" style="display: flex; justify-content: center; margin-bottom: 1em;"></div>
+					<h4>Atas Nama <br> Dio Surya Hadis Sofyan <br>083840465918</h4>					<p>
 						<small class="block">&copy; 2023 Wedding Invitation</small> 
 						<small class="block">Develop by <a href="https://nahrul.github.io" target="_blank">Nahdevl</a>
 						<!-- <small class="block">Design by <a href="https://nahrul.github.io" target="_blank">Muhammad Risal</a> -->
@@ -430,7 +431,7 @@
   	}
 
     // var d = new Date(new Date().getTime() + 200 * 120 * 120 * 2000);
-	var d = new Date("Sun Jul 02 2023 09:00");
+	var d = new Date("Sun Jul 09 2023 09:00");
 	console.log(d)
     // default example
     simplyCountdown('.simply-countdown-one', {
@@ -466,7 +467,7 @@
 
 	console.log(to); // Output: value1
 
-	new QRCode(div, `https://script.google.com/macros/s/AKfycbxc2LFR6TrIubY5CC-F5Yfhi8PkF5XHmwv5gLi6BBWCiSD1gblpNp97BkQ-xhgfld6D/exec?action=add&table=dio&data={"name":"${to.replace(/-/g, " ")}"}`);
+	new QRCode(div, `https://qr.dana.id/v1/281012012023041516312309`);
 
 	// menjalankan fungsi fetch data ketika halaman di refresh
 

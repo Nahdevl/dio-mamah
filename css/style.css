@@ -1960,7 +1960,7 @@ header .container .row{}
 .welcome .container .konten h2,
 header .container .row .konten h2{
   font-style: bold;
-  font-size: 1em;
+  font-size: 0.8em;
   color: #fff;
 }
 .welcome .container .konten button{
@@ -1976,7 +1976,7 @@ header .container .row .konten h2{
 .welcome,
 header{
   background-image: url('../images/gallery-3.jpg');
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
